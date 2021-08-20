@@ -1,17 +1,49 @@
+@import 'variables';
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
-
+.font-weight--500{
+    font-weight: 500;
+}
+.font-weight--600{
+    font-weight: 600;
+}
+.font-size--1{
+    font-size: 1.2rem;
+}
+.font-size--2{
+    font-size: 1.8rem;
+}
+.color--white{
+    color: $White;
+}
+.color--Light-gray{
+    color: $Light-gray;
+}
+.py--1{
+    padding: 10px 0;
+}
+.border--moderate-violet{
+border: 2px solid $Moderate-violet;
+}
+body{
+    background-color: $Light-grayish-blue;
+}
 section{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .contenedor{
@@ -20,20 +52,25 @@ section{
                         "card-3 card-4 card-4 card-5";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     width: 80%;
 
     .card{
+        padding: 50px;
         border: 3px solid blue;
-        padding: 10px;
+        border-radius: 10px;
 
         .card__divImg{
             display: flex;
             flex-direction: row;
+            align-items: center;
 
             img{
+                width: 30px;
                 margin-right: 10px;
+                border-radius: 50%;
+                
             }
 
             .card__divSpan{
@@ -41,6 +78,7 @@ section{
                 
                 span{
                     display: inline-block;
+                    margin-left: 10px;
                 }
             }
         }
@@ -48,6 +86,7 @@ section{
     
     .card-1{ 
         grid-area: card-1;
+        background-color: $Moderate-violet;
     }
     .card-2{
         grid-area:card-2;
@@ -57,6 +96,7 @@ section{
     }
     .card-4{ 
         grid-area: card-4;
+        
     }
     .card-5{ 
         grid-area:card-5;
