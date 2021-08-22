@@ -15,10 +15,10 @@
   font-weight: 600; }
 
 .font-size--1 {
-  font-size: 1.2rem; }
+  font-size: 1.1rem; }
 
 .font-size--2 {
-  font-size: 1.6rem; }
+  font-size: 1.5rem; }
 
 .color--white {
   color: white; }
@@ -107,3 +107,16 @@ section {
   .contenedor .card-5 {
     grid-area: card-5;
     background-color: white; }
+
+@media (max-width: 500px) {
+  section {
+    height: auto; }
+  .contenedor {
+    display: grid;
+    grid-template-areas: "card-1" "card-2" "card-3"  "card-4" "card-5";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 25px;
+    width: 100%; }
+    .contenedor .card {
+      margin: 0 25px; } }
