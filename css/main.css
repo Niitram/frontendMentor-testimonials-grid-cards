@@ -23,11 +23,23 @@
 .color--white {
   color: white; }
 
-.color--white-50 {
-  color: rgba(255, 255, 255, 0.5); }
-
 .color--Light-gray {
   color: #cfcfcf; }
+
+.color--Light-gray-70 {
+  color: rgba(207, 207, 207, 0.7); }
+
+.color--Light-gray-50 {
+  color: rgba(207, 207, 207, 0.5); }
+
+.color--Very-dark-grayish-blue {
+  color: #48556a; }
+
+.color--Very-dark-grayish-blue-50 {
+  color: rgba(72, 85, 106, 0.5); }
+
+.color--Very-dark-grayish-blue-70 {
+  color: rgba(72, 85, 106, 0.7); }
 
 .py--1 {
   padding: 10px 0; }
@@ -55,14 +67,13 @@ section {
   width: 70%; }
   .contenedor .card {
     padding: 20px;
-    border: 3px solid blue;
     border-radius: 10px; }
     .contenedor .card .card__divImg {
       display: flex;
       flex-direction: row;
       align-items: center; }
       .contenedor .card .card__divImg img {
-        width: 30px;
+        width: 40px;
         margin-right: 10px;
         border-radius: 50%; }
       .contenedor .card .card__divImg .card__divSpan {
@@ -85,10 +96,14 @@ section {
       height: 100px;
       z-index: -1; }
   .contenedor .card-2 {
-    grid-area: card-2; }
+    grid-area: card-2;
+    background-color: #48556a; }
   .contenedor .card-3 {
-    grid-area: card-3; }
+    grid-area: card-3;
+    background-color: white; }
   .contenedor .card-4 {
-    grid-area: card-4; }
+    grid-area: card-4;
+    background-color: #19212e; }
   .contenedor .card-5 {
-    grid-area: card-5; }
+    grid-area: card-5;
+    background-color: white; }

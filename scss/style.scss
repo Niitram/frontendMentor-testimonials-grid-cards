@@ -25,11 +25,23 @@
 .color--white{
     color: $White;
 }
-.color--white-50{
-    color: hsla(0, 0%, 100%, 0.5);
-}
 .color--Light-gray{
     color: $Light-gray;
+}
+.color--Light-gray-70{
+    color: hsla(0, 0%, 81%, 0.7);
+}
+.color--Light-gray-50{
+    color: hsla(0, 0%, 81%, 0.5);
+}
+.color--Very-dark-grayish-blue{
+    color: $Very-dark-grayish-blue;
+}
+.color--Very-dark-grayish-blue-50{
+    color: hsla(217, 19%, 35%, 0.5);
+}
+.color--Very-dark-grayish-blue-70{
+    color: hsla(217, 19%, 35%, 0.7);
 }
 
 
@@ -64,7 +76,6 @@ section{
 
     .card{
         padding: 20px;
-        border: 3px solid blue;
         border-radius: 10px;
 
         .card__divImg{
@@ -73,7 +84,7 @@ section{
             align-items: center;
 
             img{
-                width: 30px;
+                width: 40px;
                 margin-right: 10px;
                 border-radius: 50%;
                 
@@ -108,16 +119,22 @@ section{
     }
     .card-2{
         grid-area:card-2;
+        background-color: $Very-dark-grayish-blue;
     }
     .card-3{ 
         grid-area:card-3;
+        background-color:  $White;
+
     }
     .card-4{ 
         grid-area: card-4;
+        background-color: $Very-dark-blackish-blue;
         
     }
     .card-5{ 
         grid-area:card-5;
+        background-color:  $White;
+
     }
 
     }
