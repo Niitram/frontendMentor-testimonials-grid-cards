@@ -18,10 +18,13 @@
   font-size: 1.2rem; }
 
 .font-size--2 {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
 .color--white {
   color: white; }
+
+.color--white-50 {
+  color: rgba(255, 255, 255, 0.5); }
 
 .color--Light-gray {
   color: #cfcfcf; }
@@ -47,11 +50,11 @@ section {
   grid-template-areas: "card-1 card-1 card-2 card-5" "card-3 card-4 card-4 card-5";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  width: 80%; }
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  width: 70%; }
   .contenedor .card {
-    padding: 50px;
+    padding: 20px;
     border: 3px solid blue;
     border-radius: 10px; }
     .contenedor .card .card__divImg {
@@ -69,7 +72,18 @@ section {
           margin-left: 10px; }
   .contenedor .card-1 {
     grid-area: card-1;
-    background-color: #7541c8; }
+    background-color: #7541c8;
+    position: relative;
+    z-index: 10; }
+    .contenedor .card-1::after {
+      content: "";
+      position: absolute;
+      right: 80px;
+      top: 0;
+      background-image: url("../images/bg-pattern-quotation.svg");
+      width: 100px;
+      height: 100px;
+      z-index: -1; }
   .contenedor .card-2 {
     grid-area: card-2; }
   .contenedor .card-3 {
